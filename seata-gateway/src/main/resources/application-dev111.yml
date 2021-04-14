@@ -1,0 +1,23 @@
+#spring:
+#  cloud:
+#    gateway:
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods: "*"
+#      discovery:
+#        locator:
+#          enabled: true
+#      routes:
+#        - id: seata-order
+#          uri: lb://seata-order
+#          predicates:
+#            - Path=/seata-order/**
+#        - id: seata-storage
+#          uri: lb://seata-storage
+#          filters:
+#            - StripPrefix=1
+#          predicates:
+#            - Path=/consumer/**,/deduct/**
+#

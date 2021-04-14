@@ -1,0 +1,4 @@
+# Project exclude paths
+/seata-consumer/target/
+/seata-gateway/target/
+/seata-order/target/
