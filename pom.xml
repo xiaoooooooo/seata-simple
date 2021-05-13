@@ -12,6 +12,9 @@
         <module>seata-consumer</module>
         <module>seata-order</module>
         <module>seata-gateway</module>
+        <module>sharding-jdbc-demo</module>
+        <module>webfluxDemo</module>
+        <module>io-server</module>
     </modules>
 
     <properties>

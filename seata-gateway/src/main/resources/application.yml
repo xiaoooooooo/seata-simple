@@ -1,0 +1,17 @@
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: seata-consumer
+          uri: lb://seata-storage
+          predicates:
+            - Path=/seata-storage/consumer/**
+          filters:
+            - StripPrefix=1
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+server:
+  port: 9000

@@ -7,10 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="seata-gateway" />
-        <module name="seata-order" />
         <module name="seata-consumer" />
+        <module name="webfluxDemo" />
+        <module name="seata-order" />
+        <module name="sharding-jdbc-demo" />
+        <module name="untitled" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="11">
+      <module name="io-server" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
