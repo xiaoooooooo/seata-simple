@@ -6,7 +6,7 @@ spring:
         - id: seata-consumer
           uri: lb://seata-storage
           predicates:
-            - Path=/seata-storage/consumer/**
+            - Path=/**
           filters:
             - StripPrefix=1
       discovery:

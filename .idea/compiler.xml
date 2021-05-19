@@ -11,11 +11,9 @@
         <module name="webfluxDemo" />
         <module name="seata-order" />
         <module name="sharding-jdbc-demo" />
-        <module name="untitled" />
+        <module name="io-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11">
-      <module name="io-server" target="8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>
