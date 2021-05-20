@@ -2,3 +2,5 @@
 /seata-consumer/target/
 /seata-gateway/target/
 /seata-order/target/
+/.idea/
+*.iml
