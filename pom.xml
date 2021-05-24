@@ -16,7 +16,7 @@
         <module>sharding-jdbc-demo</module>
         <module>webfluxDemo</module>
         <module>io-server</module>
-        <module>spring-cloud-gateway</module>
+        <module>seata-security</module>
     </modules>
 
     <properties>
