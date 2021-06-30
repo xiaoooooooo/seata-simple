@@ -2,6 +2,7 @@ package com.xiao.web;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
@@ -62,5 +63,8 @@ public class FluxController {
         return result;
     }
 
-
+    @GetMapping("/hello")
+    private ResponseEntity<String> hello() {
+        return ResponseEntity.ok("hello");
+    }
 }

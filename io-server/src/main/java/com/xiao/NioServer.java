@@ -1,20 +1,13 @@
 package com.xiao;
 
-import org.apache.tomcat.util.net.NioBlockingSelector;
-import sun.nio.ch.DirectBuffer;
-import sun.nio.ch.WindowsSelectorProvider;
-
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.InetSocketAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
 import java.nio.ByteBuffer;
-import java.nio.channels.*;
-import java.nio.channels.spi.SelectorProvider;
-import java.util.ArrayList;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * @author xiaojw
